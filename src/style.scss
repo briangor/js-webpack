@@ -1,0 +1,12 @@
+$bg-color: rgb(255, 248, 237);
+$background: blue;
+
+body {
+    background-color: $bg-color;
+    padding: 0 4em;
+}
+ 
+h2 {
+    background: $background;
+    color: yellow;
+}
