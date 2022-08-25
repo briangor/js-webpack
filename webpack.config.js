@@ -14,7 +14,7 @@ const config = {
         },
         compress: true,
         hot: true,
-        //port: 9002,
+        port: 9001,
     },
     module: {
         rules: [

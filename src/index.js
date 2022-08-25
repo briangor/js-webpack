@@ -1,11 +1,20 @@
-const sayHello = require('./say-hello');
-require('./style.scss');
+//require('./style.scss');
 
-sayHello('Trump', document.querySelector('h2'));
+let el = document.querySelector('h2');
 
-let h1 = document.querySelector('h1');
-h1.innerHTML = 'Welcome to Webpack. Happy Coding!';
-const studentName = 'Kylo';
-console.log(studentName);
+function sayHello(name) {
+    console.log(name);
+    if (el !== null) {
+        el.innerHTML = 'Hello ' + name + '!';
+    }
+    return true;
 
- 
+}
+sayHello('Skywalker');
+
+// let h1 = document.querySelector('h1');
+// h1.innerHTML = 'Welcome to Webpack. Happy Coding!';
+
+function getmultiply(a, b) {
+    return a * b;
+}

@@ -15,17 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const sayHello = __webpack_require__(/*! ./say-hello */ \"./src/say-hello.js\");\n\n__webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\nsayHello('Trump', document.querySelector('h2'));\nlet h1 = document.querySelector('h1');\nh1.innerHTML = 'Welcome to Webpack. Happy Coding!';\nconst studentName = 'Kylo';\nconsole.log(studentName);\n\n//# sourceURL=webpack://webpack/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/say-hello.js":
-/*!**************************!*\
-  !*** ./src/say-hello.js ***!
-  \**************************/
-/***/ ((module) => {
-
-eval("module.exports = function (name, element) {\n  element.textContent = 'Hello ' + name + '!';\n};\n\n//# sourceURL=webpack://webpack/./src/say-hello.js?");
+eval("__webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\nlet el = document.querySelector('h2');\n\nfunction sayHello(name) {\n  console.log(name);\n  return true; //el.innerHTML = 'Hello ' + name + '!';\n}\n\nsayHello('Skywalker'); // let h1 = document.querySelector('h1');\n// h1.innerHTML = 'Welcome to Webpack. Happy Coding!';\n\nfunction multiply(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack://webpack/./src/index.js?");
 
 /***/ }),
 
